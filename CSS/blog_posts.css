@@ -1,0 +1,155 @@
+@import url("blog_post_media.css");
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: aliceblue;
+}
+
+.blogContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.postDetail {
+  padding: 15px;
+  margin-left: 100px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  margin-left: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.content {
+  margin-top: 35px;
+}
+
+.content,
+p {
+  line-height: 2em;
+}
+
+.postImage {
+  width: 500px;
+  height: 400px;
+}
+
+.asideDetail {
+  padding: 25px;
+}
+
+.connectSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  padding: 25px;
+  border: 3px solid cadetblue;
+  background-color: beige;
+}
+
+.connectSocial,
+img {
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+.quote {
+  width: 305px;
+  height: 200px;
+  padding: 25px;
+  margin-top: 25px;
+  padding-top: 50px;
+  margin-left: 10px;
+  background-color: beige;
+  border: 3px solid cadetblue;
+}
+
+.about {
+  width: 305px;
+  height: 200px;
+  padding: 25px;
+  margin-top: 25px;
+  padding-top: 50px;
+  margin-left: 10px;
+  background-color: beige;
+  border: 3px solid cadetblue;
+}
+
+@media (min-width: 320px) and (max-width: 667px) {
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .postDetail {
+    margin-left: 50px;
+  }
+
+  figure {
+    margin-left: 15px;
+  }
+
+  .postImage {
+    width: 200px;
+    height: 400px;
+  }
+
+  .connectSocial {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 235px;
+    height: 200px;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-top: 5px;
+    width: 235px;
+    height: 200px;
+  }
+
+  .quote,
+  blockquote,
+  p {
+    font-size: 11px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-top: 5px;
+    width: 235px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 768px) {
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .postImage {
+    width: 300px;
+    height: 400px;
+  }
+
+  .connectSocial {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 200px;
+  }
+}
